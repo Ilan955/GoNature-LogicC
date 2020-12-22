@@ -2,21 +2,22 @@ package Entities;
 
 public class Park {
 
-	public static String parkName;
-	public static int maxVisitors;
-	public static int maxAvailableVisitors;
-	public static int currentVisitors;
-	public static int maxDurationVisit;
-	public static int AmountOfUnExpectedTravellers;
-	
-	public Park(String parkName,int maxVisitors,int maxAvailableVisitors,int currentVisitors,int maxDurationVisit,int AmountOfUnExpected) {
-		this.parkName=parkName;
-		this.maxVisitors=maxVisitors;
-		this.maxAvailableVisitors=maxAvailableVisitors;
-		this.currentVisitors=currentVisitors;
-		this.maxDurationVisit=maxDurationVisit;
-		this.AmountOfUnExpectedTravellers=AmountOfUnExpected;
-		
+	private String parkName;
+	private int maxVisitors;
+	private int maxAvailableVisitors;
+	private int currentVisitors;
+	private float maxDurationVisit;
+	private int AmountOfUnExpectedTravellers;
+
+	public Park(String parkName, int currentVisitors, int AmountOfUnExpected, int maxAvailableVisitors, int maxVisitors,
+			float maxDurationVisit) {
+		this.parkName = parkName;
+		this.maxVisitors = maxVisitors;
+		this.maxAvailableVisitors = maxAvailableVisitors;
+		this.currentVisitors = currentVisitors;
+		this.maxDurationVisit = maxDurationVisit;
+		this.AmountOfUnExpectedTravellers = AmountOfUnExpected;
+
 	}
 
 	public String getParkName() {
@@ -51,11 +52,11 @@ public class Park {
 		this.currentVisitors = currentVisitors;
 	}
 
-	public int getMaxDurationVisit() {
+	public float getMaxDurationVisit() {
 		return maxDurationVisit;
 	}
 
-	public void setMaxDurationVisit(int maxDurationVisit) {
+	public void setMaxDurationVisit(float maxDurationVisit) {
 		this.maxDurationVisit = maxDurationVisit;
 	}
 
@@ -66,7 +67,5 @@ public class Park {
 	public void setAmountOfUnExpectedTravellers(int amountOfUnExpectedTravellers) {
 		AmountOfUnExpectedTravellers = amountOfUnExpectedTravellers;
 	}
-	
-	
-	
+
 }
