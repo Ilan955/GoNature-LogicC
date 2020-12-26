@@ -15,7 +15,7 @@ public class Person {
 	
 	
 	public Person(String firstName,String LastName,String email,String type,String phoneNumber) {
-		this.firstName=firstName;
+		this.setFirstName(firstName);
 		this.LastName=LastName;
 		this.email=email;
 		this.type=type;
@@ -76,6 +76,12 @@ public class Person {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
 }
