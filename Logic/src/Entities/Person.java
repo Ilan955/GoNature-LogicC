@@ -59,6 +59,13 @@ public class Person {
 	public void setPhone(String phoneNumber) {
 		this.phoneNumber=phoneNumber;
 	}
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		firstName = firstName;
+	}
 	public String getLastName() {
 		return LastName;
 	}
