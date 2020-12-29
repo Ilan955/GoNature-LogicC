@@ -17,7 +17,6 @@ public class Park {
 		this.currentVisitors = currentVisitors;
 		this.maxDurationVisit = maxDurationVisit;
 		this.AmountOfUnExpectedTravellers = AmountOfUnExpected;
-
 	}
 
 	public String getParkName() {
