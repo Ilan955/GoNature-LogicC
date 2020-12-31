@@ -9,9 +9,9 @@ import javafx.collections.ObservableList;
 public class inits {
 	public static ObservableList<String> setWantedParkCB() {
 		ArrayList<String> parks = new ArrayList<String>();
-		parks.add("Park A");
-		parks.add("Park B");
-		parks.add("Park C");
+		parks.add("ParkA");
+		parks.add("ParkB");
+		parks.add("ParkC");
 		ObservableList<String> listForParks = FXCollections.observableArrayList(parks);
 		return listForParks;
 	}
