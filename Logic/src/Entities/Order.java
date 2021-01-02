@@ -68,4 +68,11 @@ public class Order {
 		this.totalPrice = totalPrice;
 	}
 
+
+	public String toString() {
+		return ("" + orderNum + "," + timeInPark + "," + dateOfVisit + "," + wantedPark + "," + totalPrice + ","
+				+ numberOfVisitors);
+	}
+
+
 }
