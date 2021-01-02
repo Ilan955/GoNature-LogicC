@@ -6,26 +6,28 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Order {
-	
+
 	private int orderNum;
-	private LocalTime timeInPark ; 
+	private LocalTime timeInPark;
 	private LocalDate dateOfVisit;
 	private String wantedPark;
 	private float totalPrice;
 	private int numberOfVisitors;
-	
-	
-	public Order(int orderNum,LocalTime time,LocalDate dateOfVisit2,String wantedPark,int numberOfVisitors,float totalPrice) {
-		this.orderNum=orderNum;
-		this.timeInPark=time;
-		this.dateOfVisit=dateOfVisit2;
-		this.wantedPark=wantedPark;
-		this.totalPrice=totalPrice;
-		this.numberOfVisitors=numberOfVisitors;
+
+	public Order(int orderNum, LocalTime time, LocalDate dateOfVisit2, String wantedPark, int numberOfVisitors,
+			float totalPrice) {
+		this.orderNum = orderNum;
+		this.timeInPark = time;
+		this.dateOfVisit = dateOfVisit2;
+		this.wantedPark = wantedPark;
+		this.totalPrice = totalPrice;
+		this.numberOfVisitors = numberOfVisitors;
 	}
+
 	public int getNumberOfVisitors() {
 		return numberOfVisitors;
 	}
+
 	public int getOrderNum() {
 		return orderNum;
 	}
@@ -65,7 +67,5 @@ public class Order {
 	public void setTotalPrice(float totalPrice) {
 		this.totalPrice = totalPrice;
 	}
-	
-	
 
 }
