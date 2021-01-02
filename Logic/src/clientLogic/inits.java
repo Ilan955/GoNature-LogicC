@@ -7,6 +7,25 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class inits {
+
+	public static ObservableList<String> setTypeMemberCB() {
+		ArrayList<String> types = new ArrayList<String>();
+		types.add("Traveller");
+		types.add("Group Guide");
+
+		ObservableList<String> listForTypes = FXCollections.observableArrayList(types);
+		return listForTypes;
+	}
+
+	public static ObservableList<String> setPaymentCB() {
+		ArrayList<String> pays = new ArrayList<String>();
+		pays.add("Cash");
+		pays.add("Credit Card");
+
+		ObservableList<String> listForPaymont = FXCollections.observableArrayList(pays);
+		return listForPaymont;
+	}
+
 	public static ObservableList<String> setWantedParkCB() {
 		ArrayList<String> parks = new ArrayList<String>();
 		parks.add("ParkA");
