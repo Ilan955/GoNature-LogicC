@@ -1,7 +1,5 @@
 package Entities;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -21,6 +19,11 @@ public class Order {
 		this.dateOfVisit = dateOfVisit2;
 		this.wantedPark = wantedPark;
 		this.totalPrice = totalPrice;
+		this.numberOfVisitors = numberOfVisitors;
+	}
+
+	public Order(int numberOfVisitors, String wantedPark) {
+		this.wantedPark = wantedPark;
 		this.numberOfVisitors = numberOfVisitors;
 	}
 
@@ -68,11 +71,9 @@ public class Order {
 		this.totalPrice = totalPrice;
 	}
 
-
 	public String toString() {
 		return ("" + orderNum + "," + timeInPark + "," + dateOfVisit + "," + wantedPark + "," + totalPrice + ","
 				+ numberOfVisitors);
 	}
-
 
 }

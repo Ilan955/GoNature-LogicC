@@ -20,6 +20,10 @@ public class TravellerInPark {
 		this.wantedPark = wantedPark;
 		this.totalPrice = totalPrice;
 	}
+	public TravellerInPark(int numberOfVisitors,String wantedPark) {
+		this.numOfVisitors=numberOfVisitors;
+		this.wantedPark=wantedPark;
+	}
 
 	public String getId() {
 		return Id;
