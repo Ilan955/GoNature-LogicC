@@ -23,6 +23,10 @@ public class Order {
 		this.totalPrice=totalPrice;
 		this.numberOfVisitors=numberOfVisitors;
 	}
+	public Order(int numberOfVisitors, String wantedPark) {
+		this.wantedPark=wantedPark;
+		this.numberOfVisitors=numberOfVisitors;
+	}
 	public int getNumberOfVisitors() {
 		return numberOfVisitors;
 	}
