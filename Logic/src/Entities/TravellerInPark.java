@@ -4,20 +4,21 @@ package Entities;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class TravellerInPark{
+public class TravellerInPark {
 	private String Id;
 	private int numOfVisitors;
-	private LocalTime timeInPark ; 
+	private LocalTime timeInPark;
 	private LocalDate dateOfVisit;
 	private String wantedPark;
 	private float totalPrice;
-	
-	public TravellerInPark(LocalTime time,LocalDate dateOfVisit,String wantedPark,int numberOfVisitors,float totalPrice) {
-		this.numOfVisitors=numberOfVisitors;
-		this.timeInPark=time;
-		this.dateOfVisit=dateOfVisit;
-		this.wantedPark=wantedPark;
-		this.totalPrice=totalPrice;
+
+	public TravellerInPark(LocalTime time, LocalDate dateOfVisit, String wantedPark, int numberOfVisitors,
+			float totalPrice) {
+		this.numOfVisitors = numberOfVisitors;
+		this.timeInPark = time;
+		this.dateOfVisit = dateOfVisit;
+		this.wantedPark = wantedPark;
+		this.totalPrice = totalPrice;
 	}
 
 	public String getId() {
@@ -27,6 +28,7 @@ public class TravellerInPark{
 	public void setId(String id) {
 		Id = id;
 	}
+
 	public int getnumOfVisitors() {
 		return numOfVisitors;
 	}
@@ -34,6 +36,7 @@ public class TravellerInPark{
 	public void setnumOfVisitors(int numberOfVisitors) {
 		numOfVisitors = numberOfVisitors;
 	}
+
 	public LocalTime gettimeInPark() {
 		return timeInPark;
 	}
@@ -41,6 +44,7 @@ public class TravellerInPark{
 	public void settimeInPark(LocalTime time) {
 		timeInPark = time;
 	}
+
 	public LocalDate getdateOfVisit() {
 		return dateOfVisit;
 	}
@@ -48,6 +52,7 @@ public class TravellerInPark{
 	public void setdateOfVisit(LocalDate date) {
 		dateOfVisit = date;
 	}
+
 	public String getwantedPark() {
 		return wantedPark;
 	}
@@ -55,6 +60,7 @@ public class TravellerInPark{
 	public void setwantedPark(String park) {
 		wantedPark = park;
 	}
+
 	public float gettotalPrice() {
 		return totalPrice;
 	}
