@@ -1,9 +1,20 @@
+/** Description of SignUpScreenController 
+* @author Omri Cohen
+* 
+* @version final Jan 2, 2021.
+*/
+
 package clientLogic;
 
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * This is a class for reports.
+ * 
+ * this class will store data required to produce reports
+ */
 public class Reports {
 
 	int numOfVisitors;
@@ -12,6 +23,18 @@ public class Reports {
 	LocalTime exit;
 	long Stay;
 	LocalDate date;
+
+	/**
+	 * Description of Reports.
+	 * 
+	 * @param num      is numOfVisitors.
+	 * @param type     is the type.
+	 * @param entrance is entrance time.
+	 * @param exit     is exit time
+	 * @param date     is visit date
+	 * 
+	 * @return void - this function is a constructor for Reports entity..
+	 */
 
 	public Reports(String num, String type, String entrance, String exit, String date) {
 		this.numOfVisitors = Integer.valueOf(num);
@@ -22,6 +45,11 @@ public class Reports {
 		this.date = LocalDate.parse(date);
 	}
 
+	/**
+	 * Description of getEntranceTime()
+	 * 
+	 * @return float - this function returns entrance time to the park as a float.
+	 */
 	public Float getEntranceTime() {
 		int hours, minutes;
 		float res;
@@ -33,14 +61,29 @@ public class Reports {
 
 	}
 
+	/**
+	 * Description of getNumOfVisit()
+	 * 
+	 * @return int - this function returns how many visitors has entered the park.
+	 */
 	public int getNumOfVisit() {
 		return numOfVisitors;
 	}
 
+	/**
+	 * Description of getStay()
+	 * 
+	 * @return long - this function returns how much time visitor was in the park.
+	 */
 	public long getStay() {
 		return Stay;
 	}
 
+	/**
+	 * Description of getDate()
+	 * 
+	 * @return LocalDate - this function returns when the visit happened.
+	 */
 	public LocalDate getDate() {
 		return this.date;
 	}
