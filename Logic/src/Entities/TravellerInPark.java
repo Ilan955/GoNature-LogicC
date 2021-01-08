@@ -4,6 +4,12 @@ package Entities;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * Class for save data from TravellerInpark table
+ * 
+ * @author Liad Yadin
+ *
+ */
 public class TravellerInPark {
 	private String Id;
 	private int numOfVisitors;
@@ -20,9 +26,10 @@ public class TravellerInPark {
 		this.wantedPark = wantedPark;
 		this.totalPrice = totalPrice;
 	}
-	public TravellerInPark(int numberOfVisitors,String wantedPark) {
-		this.numOfVisitors=numberOfVisitors;
-		this.wantedPark=wantedPark;
+
+	public TravellerInPark(int numberOfVisitors, String wantedPark) {
+		this.numOfVisitors = numberOfVisitors;
+		this.wantedPark = wantedPark;
 	}
 
 	public String getId() {

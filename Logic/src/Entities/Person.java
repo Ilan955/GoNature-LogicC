@@ -73,7 +73,7 @@ public class Person {
 	}
 
 	public void setFirstName(String firstName) {
-		firstName = firstName;
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
