@@ -12,7 +12,7 @@ public class Person {
 	private String memberID = null;
 
 	public Person(String firstName, String LastName, String email, String type, String phoneNumber) {
-		this.setFirstName(firstName);
+		this.firstName = firstName;
 		this.LastName = LastName;
 		this.email = email;
 		this.type = type;
