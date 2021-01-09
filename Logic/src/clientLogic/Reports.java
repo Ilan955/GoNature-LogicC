@@ -9,6 +9,7 @@ package clientLogic;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Comparator;
 
 /**
  * This is a class for reports.
@@ -23,6 +24,7 @@ public class Reports {
 	LocalTime exit;
 	long Stay;
 	LocalDate date;
+	
 
 	/**
 	 * Description of Reports.
@@ -82,9 +84,30 @@ public class Reports {
 	/**
 	 * Description of getDate()
 	 * 
-	 * @return LocalDate - this function returns when the visit happened.
+	 * @return int - this function returns the day the visit happened.
 	 */
-	public LocalDate getDate() {
-		return this.date;
+	public int getDate() {
+		return this.date.getDayOfMonth();
 	}
+
+	/**
+	 * Description of getType()
+	 * 
+	 * @return String - this function returns the type of the visitor.
+	 */
+	public String getType() {
+		return this.type;
+	}
+
+	// Create Comparator to sort charts by day
+	public static final Comparator<Reports> dayOfMonth = new Comparator<Reports>() {
+		public int compare(Reports r1, Reports r2) {
+			return Integer.compare(r1.getDate(), r2.getDate());
+		}
+	};
+
+	public void syso() {
+		System.out.println("numOfVisitors: "+ numOfVisitors+" type: " + type+" enterTime: " +entrance + " exitTime: " + exit +" DateOfVisit: "+ date);
+	}
+
 }

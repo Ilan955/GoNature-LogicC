@@ -56,6 +56,7 @@ public class departmentEmployee extends Person {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getFirstName() {
 		return this.getFirstName();
 	}
