@@ -35,7 +35,7 @@ public class Reports {
 	 * @param exit     is exit time
 	 * @param date     is visit date
 	 * 
-	 * @return void - this function is a constructor for Reports entity..
+	 * 
 	 */
 
 	public Reports(String num, String type, String entrance, String exit, String date) {
